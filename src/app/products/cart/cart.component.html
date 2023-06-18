@@ -1,0 +1,81 @@
+<!-- empty cart -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col text-center mt-5">
+            <img src="https://th.bing.com/th/id/R.e7313cf4e2648d7170a034bdfe99894e?rik=UZdMMOMf0LiX7w&riu=http%3a%2f%2fgifimage.net%2fwp-content%2fuploads%2f2018%2f05%2fshopping-cart-gif-8.gif&ehk=f8rJXwuzG%2b5J%2f7wE2g1CdYsoNvR%2fOBb6fk25bZ0ELqU%3d&risl=&pid=ImgRaw&r=0" alt="empty wishlist">
+            <h3 class="text-danger mt-3">your cart is empty</h3>
+            <a routerLink="" class="btn btn-success">Add more</a>
+        </div>
+    </div>
+</div>
+
+<!-- wish list section with item -->
+<section class="container mt-5">
+    <div class="row mt-5">
+        <h3 class="text-primary text-decoration-underline">
+            Cart Summery
+        </h3>
+        <div class="col-lg-7 border p-3 rounded me-1 mt-3">
+            <!-- cart table -->
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Name</th>
+                        <th>Image</th>
+                        <th class="text-center">Quantity</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Mens Casual slim shirt</td>
+                        <td class="align-item-center">
+                            <img src="https://th.bing.com/th/id/OIP.TA8KiMx_I6aeEk87I9y81AHaJo?w=148&h=193&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="product" width="70px" height="70px">
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <!-- decrement button -->
+                                <button class="btn fw-bolder">-</button>
+                                <!-- quantity box -->
+                                <input class="form-control text-center" type="number" value="1" readonly  style="width: 3rem;">
+                                <!-- increment button -->
+                                <button class="btn fw-bolder">+</button>
+                            </div>
+                        </td>
+                        <td>1000</td>
+                        <td>
+                            <!-- delete an item -->
+                            <button class="btn">
+                                <i class="fa-solid fa-trash text-center text-danger"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="d-flex justify-content-end">
+                <!-- empty cart btn -->
+                <button class="btn btn-danger me-3">
+                    <i class="fa-solid fa-trash fa-shake me-1"></i>
+                    empty cart
+                </button>
+                <!-- shop more link -->
+                <a routerLink="" class="btn btn-success">
+                    <i class="fa-solid fa-cart-plus fa-shake me-1"></i>
+                    shop more
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4 ms-auto mt-3">
+            <div class="border p-3 rounded">
+                <h5>Sub Total :<span class="fa-bolder fs-3 text-danger">1000</span></h5>
+                <hr>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary">Proceed To Buy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
